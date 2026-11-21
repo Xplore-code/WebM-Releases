@@ -45,6 +45,16 @@ WebM pairs a compact browser layout with a customizable interface. Choose a visu
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <h3>🪟 Floating browser window</h3>
+      Open an entire website in a separate movable floating window while continuing to use your main browser.
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎬 Picture-in-Picture</h3>
+      Keep supported videos playing in a small floating player while browsing other pages.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <h3>⬇️ Integrated downloads</h3>
       Manage downloads from WebM's built-in downloads interface.
     </td>
@@ -55,22 +65,22 @@ WebM pairs a compact browser layout with a customizable interface. Choose a visu
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🎬 Video player</h3>
+      <h3>🎥 Video player</h3>
       Play supported video files directly through WebM's media playback features.
     </td>
-    <td width="50%" valign="top">
-      <h3>🖼️ Picture-in-Picture</h3>
-      Keep supported videos in a floating window while browsing other pages.
-    </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3>🧩 Browser extensions</h3>
       Extension management is part of the WebM experience. Some extension functionality may still be under testing.
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3>🌐 Chromium-based browsing</h3>
       Enjoy everyday web browsing with WebM's Chromium-based engine.
+    </td>
+    <td width="50%" valign="top">
+      <h3>📥 Portable support</h3>
+      Choose the portable version to run WebM without a traditional installation.
     </td>
   </tr>
 </table>
