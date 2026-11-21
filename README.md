@@ -1,93 +1,131 @@
+<div align="center">
+
 # WebM Browser
 
-**Your personal browser for everyday browsing, productivity, privacy, and media.**
+### Your browser for browsing, productivity, privacy, and media.
 
-WebM is a personal Chromium-based desktop browser for Windows, designed to bring everyday browsing tools and useful features together in one compact application.
-
-Built with a focus on a smooth browsing experience, practical functionality, customization, and user control.
-
-## Download WebM
+A modern Chromium-based browser for Windows, bringing everyday browsing tools and useful extras together in one compact experience.
 
 [**Download the latest release**](https://github.com/Xplore-code/WebM-Releases/releases/latest)
+· [Report an issue](https://github.com/Xplore-code/WebM/issues)
 
-Choose the version that suits you:
-
-- **Windows Installer** — Installs WebM on your PC for everyday use.
-- **Portable** — Runs WebM without a traditional installation.
-
-Download the latest version from the Releases page. Avoid downloading the source-code ZIP files if you simply want to use WebM.
-
-## Features
-
-### Browsing and productivity
-- Tab management, pinned tabs, and tab groups
-- Horizontal and vertical tab layouts
-- Split-view browsing
-- Sleeping tabs and memory management
-- Session restoration
-- Customizable home screen
-- Bookmarks and browsing history
-
-### Privacy and security
-- Built-in ad and tracker filtering
-- Secure DNS options
-- HTTPS upgrades where supported
-- Website permission controls
-- Site security information
-- Private browsing
-- Optional clearing of browsing data on exit
-
-### Extensions (haven't tested, sorry >.<)
-- Load unpacked browser extensions from your computer
-- Pin extensions to the toolbar
-- Open extension popups and settings
-- Manage and remove installed extensions
-
-Extension compatibility varies. Some Chrome extension APIs are not supported by Electron.
-
-### Downloads and files
-- Built-in download manager
-- BitTorrent downloads
-- Preview supported PDF, image, audio, video, and text files
-- Open and extract supported archive formats
-
-### Media experience
-- Picture-in-Picture
-- Floating video windows
-- Media controls and subtitle features
-
-### Customization
-- Modern glass-style interface
-- Theme and accent customization
-- Wallpaper-based appearance options
-- Multiple browser layouts
-
-## Important Information
-
-**Extensions:** Only install extensions from sources you trust. Some extensions may request access to the websites you visit.
-
-**Downloads:** Downloaded files may contain malware. Always verify files before opening them.
-
-**BitTorrent:** Torrent connections can expose your public IP address to other peers. WebM does not provide a VPN or hide your IP address. Only download and share content you are legally allowed to access.
-
-**Privacy:** WebM stores browser profile information locally. Some optional features communicate with third-party providers, such as search engines, DNS providers, translation services, filter-list providers, and websites you visit. Refer to the in-app Privacy Policy for details.
-
-## Updates
-
-Check the [Releases page](https://github.com/Xplore-code/WebM-Releases/releases/latest) for the latest version.
-
-Automatic update availability depends on the release configuration and should be verified with an actual update test.
-
-## Feedback and Bug Reports
-
-Found a bug or have an idea for improvement?
-
-Visit the [WebM Releases repository](https://github.com/Xplore-code/WebM-Releases) for release information.
+</div>
 
 ---
 
-**WebM Browser**
+## A look inside WebM
 
-A personal browser project.
+<p align="center">
+  <img src="assets/appearance.jpg" alt="WebM Appearance settings with customizable glass themes and wallpaper" width="100%">
+</p>
 
-**Developer: KRAM**
+WebM pairs a compact browser layout with a customizable interface. Choose a visual style, personalize the wallpaper, and make the browser feel like your own.
+
+## Features
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🎨 Custom appearance</h3>
+      Choose from Glass, Smooth Glass, Classic Modern, Adaptive Wallpaper, and Site Colors themes. Personalize the browser with your own wallpaper and accent colors.
+    </td>
+    <td width="50%" valign="top">
+      <h3>🛡️ Privacy and security</h3>
+      Access privacy controls, Secure DNS options, filter lists, cookie controls, and site-specific permissions from one place.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🧠 RAM management</h3>
+      Choose a memory mode, manage sleeping tabs, and review memory usage to help keep browsing sessions organized.
+    </td>
+    <td width="50%" valign="top">
+      <h3>🪟 Split-view browsing</h3>
+      Work with multiple web pages side by side in one browser window.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⬇️ Integrated downloads</h3>
+      Manage downloads from WebM's built-in downloads interface.
+    </td>
+    <td width="50%" valign="top">
+      <h3>🧩 Browser extensions</h3>
+      Extension management is part of the WebM experience. Some extension functionality may still be under testing.
+    </td>
+  </tr>
+</table>
+
+## Screenshots
+
+<details>
+  <summary><strong>Privacy and security</strong></summary>
+  <br>
+  <img src="assets/privacy-security.jpg" alt="WebM Privacy and Security settings" width="100%">
+</details>
+
+<details>
+  <summary><strong>RAM management</strong></summary>
+  <br>
+  <img src="assets/ram-management.jpg" alt="WebM RAM Management settings" width="100%">
+</details>
+
+<details>
+  <summary><strong>Split-view browsing</strong></summary>
+  <br>
+  <img src="assets/split-view.jpg" alt="WebM split-view browsing with multiple pages" width="100%">
+</details>
+
+<details>
+  <summary><strong>Downloads</strong></summary>
+  <br>
+  <img src="assets/downloads.jpg" alt="WebM integrated downloads interface" width="100%">
+</details>
+
+## Download WebM
+
+Get the latest available release from the **WebM Releases** page:
+
+<div align="center">
+
+[![Latest Release](https://img.shields.io/badge/Download-Latest%20Release-35c98b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Xplore-code/WebM-Releases/releases/latest)
+
+</div>
+
+Choose the Windows package that suits you:
+
+| Package | Description |
+|---|---|
+| **Windows Installer** | Install WebM on your Windows PC for regular use. |
+| **Windows Portable** | Run WebM without a traditional installation. |
+
+Open the latest release and download the corresponding `.exe` asset.
+
+## Installation
+
+1. Open the [latest WebM release](https://github.com/Xplore-code/WebM-Releases/releases/latest).
+2. Download either the Windows Installer or Windows Portable package.
+3. If you downloaded the installer, open it and follow the setup instructions.
+4. If you downloaded the portable package, run the executable from your chosen folder.
+
+## Project information
+
+- **Platform:** Windows
+- **Browser engine:** Chromium
+- **Project:** WebM Browser
+- **Developer:** KRAM
+
+WebM is an independently developed browser project. Features and compatibility may evolve between releases.
+
+## Support and feedback
+
+Found a bug or have an idea to improve WebM? Open an issue in the [WebM source repository](https://github.com/Xplore-code/WebM).
+
+---
+
+<div align="center">
+
+**WebM Browser**  
+Made for everyday browsing.
+
+</div>
