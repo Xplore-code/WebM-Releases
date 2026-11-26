@@ -20,6 +20,17 @@ A modern Chromium-based browser for Windows, bringing everyday browsing tools an
 
 WebM pairs a compact browser layout with a customizable interface. Choose a visual style, personalize the wallpaper, and make the browser feel like your own.
 
+## What's new in 1.0.52
+
+- **Faster, lighter start-up.** When you reopen WebM, only the tab you were last on loads. Your other tabs and tab groups come back asleep, with their real titles and icons, and wake only when you open them. Up to 100 tabs are remembered (it was 30).
+- **Router and local-network pages now open.** Addresses like `192.168.1.1`, `192.168.0.1`, `10.0.0.1`, `router:8080` and `localhost` open over `http://` when you type them without a scheme. Routers with a self-signed certificate show a **Continue (unsafe)** choice that applies to private addresses only and lasts for the session. Known router names such as `smartbrosettings.net` open correctly even with Secure DNS on.
+- **New Rust-powered ad and tracker blocker.** WebM now uses Brave's `adblock-rust` engine to apply full EasyList and EasyPrivacy rules (paths, resource types, third-party and exceptions), not just domain names. If the engine can't load, WebM falls back to its built-in blocker.
+- **Optional Stronger ad blocking.** In **Settings → Privacy** you can switch on extra uBlock Origin and Peter Lowe lists for more blocking. It is off by default and can be turned off again at any time if a site misbehaves.
+
+See the [1.0.52 release notes](https://github.com/Xplore-code/WebM-Releases/releases/tag/v1.0.52) for the full list.
+
+---
+
 ## Features
 
 <table>
@@ -30,13 +41,13 @@ WebM pairs a compact browser layout with a customizable interface. Choose a visu
     </td>
     <td width="50%" valign="top">
       <h3>🛡️ Privacy and security</h3>
-      Access privacy controls, Secure DNS options, filter lists, cookie controls, and site-specific permissions from one place.
+      Rust-powered ad and tracker blocking, an optional Stronger ad blocking mode, Secure DNS options, cookie controls, and site-specific permissions in one place.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3>🧠 RAM management</h3>
-      Choose a memory mode, manage sleeping tabs, and review memory usage to help keep browsing sessions organized.
+      Choose a memory mode, let idle tabs sleep, and restore your last session without loading every tab at once.
     </td>
     <td width="50%" valign="top">
       <h3>🪟 Split-view browsing</h3>
@@ -71,6 +82,16 @@ WebM pairs a compact browser layout with a customizable interface. Choose a visu
     <td width="50%" valign="top">
       <h3>🧩 Browser extensions</h3>
       Extension management is part of the WebM experience. Some extension functionality may still be under testing.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📡 Router and local devices</h3>
+      Open router dashboards and other devices on your network, including pages that use plain HTTP or a self-signed certificate.
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔄 Automatic updates</h3>
+      The installed version checks for updates in the background and offers <strong>Restart &amp; Update</strong> when one is ready.
     </td>
   </tr>
   <tr>
@@ -125,8 +146,8 @@ Choose the Windows package that suits you:
 
 | Package | Description |
 |---|---|
-| **Windows Installer** | Install WebM on your Windows PC for regular use. |
-| **Windows Portable** | Run WebM without a traditional installation. |
+| **Windows Installer** (`WebM-<version>-x64-Setup.exe`) | Install WebM for regular use. Updates itself automatically. |
+| **Windows Portable** (`WebM-<version>-x64-Portable.exe`) | Run WebM without installing. Does not update itself: download the new file for each release. |
 
 Open the latest release and download the corresponding `.exe` asset.
 
@@ -136,6 +157,21 @@ Open the latest release and download the corresponding `.exe` asset.
 2. Download either the Windows Installer or Windows Portable package.
 3. If you downloaded the installer, open it and follow the setup instructions.
 4. If you downloaded the portable package, run the executable from your chosen folder.
+
+## Release history
+
+| Version | Highlights |
+|---|---|
+| **1.0.52** | Faster session restore (only the last tab loads), router and local-network support, Rust ad blocker, optional Stronger ad blocking. |
+| 1.0.51 | Previous release. |
+
+Every release lists its changes on the [Releases page](https://github.com/Xplore-code/WebM-Releases/releases).
+
+## Good to know
+
+- **Windows warning on first run:** WebM is an independent project and the installer may not be code-signed, so Windows SmartScreen can show a warning. Choose **More info → Run anyway** if you downloaded it from this page.
+- **Router certificate warnings:** when a router uses a self-signed certificate, WebM blocks the page by default and lets you continue for that private address only. Don't use this on public Wi-Fi.
+- **Stronger ad blocking** can occasionally break a site. If that happens, turn it off in Settings → Privacy.
 
 ## Project information
 
